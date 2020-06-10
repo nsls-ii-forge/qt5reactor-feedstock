@@ -1,0 +1,36 @@
+{% set name = "qt5reactor" %}
+{% set version = "0.6.1" %}
+{% set sha256 = "9f02e45ffa891eea98cfba39dccf719dcd515fa73254bb4d53ba936f3d7836f0" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: {{ sha256 }}
+
+build:
+  number: 0
+  noarch: python
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
+
+requirements:
+  host:
+    - python
+    - pip
+  run:
+    - python
+    - pyqt >=5
+    - twisted
+
+test:
+  imports:
+    - qt5reactor
+
+about:
+  home: https://github.com/sunu/qt5reactor
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE.txt
+  summary: Twisted Qt Integration
