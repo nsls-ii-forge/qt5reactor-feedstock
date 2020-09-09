@@ -1,6 +1,6 @@
 {% set name = "qt5reactor" %}
-{% set version = "0.6.1" %}
-{% set sha256 = "9f02e45ffa891eea98cfba39dccf719dcd515fa73254bb4d53ba936f3d7836f0" %}
+{% set version = "0.6.2" %}
+{% set sha256 = "b4533e61d883bc3e824f53bace1f91a0ae531e7eb6bf6b43e210dc9a97165e25" %}
 
 package:
   name: {{ name|lower }}
