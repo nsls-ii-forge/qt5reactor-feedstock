@@ -5,7 +5,7 @@ Home: https://github.com/sunu/qt5reactor
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Twisted Qt Integration
 
